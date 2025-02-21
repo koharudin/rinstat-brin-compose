@@ -1,0 +1,25 @@
+services:
+  app_be:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile-dev-app_be
+    ports:
+      - 81:3000
+    command: "yarn dev"
+    volumes:
+      - ./app_be:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
+  app_fe:
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile-dev-app_fe
+    ports:
+      - 82:3000
+    command: "yarn dev"
+    volumes:
+      - ./app_fe:/app
+      - /app/node_modules
