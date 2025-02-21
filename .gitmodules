@@ -2,3 +2,8 @@
 	path = app_fe
 	url = https://github.com/koharudin/rinstat-fe.git
 	branch = main
+
+[submodule "app_be"]
+	path = app_be
+	url = https://github.com/koharudin/rinstat-be.git
+	branch = main
