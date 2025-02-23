@@ -7,3 +7,11 @@
 	path = app_be
 	url = https://github.com/koharudin/rinstat-be.git
 	branch = main
+[submodule "dataverse"]
+	path = dataverse
+	url = https://github.com/IQSS/dataverse.git
+	branch = my-new-branch-v5.6
+[submodule "dataverse-docker"]
+	path = dataverse-docker
+	url = https://github.com/IQSS/dataverse-docker
+	branch = main
